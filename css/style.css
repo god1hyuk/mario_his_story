@@ -1,0 +1,508 @@
+@import url('reset.css');
+
+/* reset css */
+
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+  
+/* fonts css */
+
+body {
+    font-size: 16px;
+}
+
+
+/* section1 */
+
+.section1 {
+    position: relative;
+}
+.sec1_bg {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/title_bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* padding: 50px 0; */
+}
+.sec1_txtbox1 {
+    background: #e20706;
+    border: 20px solid #fff;
+    margin: 0 auto;
+    /* margin-top: 30px; */
+    /* margin-bottom: 80px; */
+    padding: 30px 0;
+    white-space: nowrap;
+    position: relative;
+    top: 70px;
+}
+.sec1_txt_wrap {
+    margin: 0 auto; 
+    /* background: #000; */
+}
+.sec1_txt1>h1 {
+    font-family: 'VT323', monospace;
+    color: #fff;
+    /* font-size: 150px; */
+    font-size: 9.5rem;
+    font-weight: bold;  
+    letter-spacing: 5px;
+    white-space: nowrap;
+    float: left;
+}
+.mushroom_wrap {
+    width: 85px;
+}
+.sec1_txt1 img {
+    width: 85px;
+    margin-top: 35px;
+    margin-left: 8px;
+    animation: jump 2.8s ease-in;
+}
+
+@keyframes jump {
+    0% {transform: translate(180px,0px)scaleY(0.9);}
+    10% {transform: translate(160px,-20px)scaleY(1);}
+    20% {transform: translate(140px,0px)scaleY(0.9);}
+    30% {transform: translate(120px,-20px)scaleY(1);}
+    40% {transform: translate(100px,0px)scaleY(0.9);}
+    50% {transform: translate(80px,-20px)scaleY(1);}
+    60% {transform: translate(60px,0px)scaleY(0.9);}
+    70% {transform: translate(40px,-20px)scaleY(1);}
+    80% {transform: translate(20px,0px)scaleY(0.9);}
+    90% {transform: translate(0px,-20px)scaleY(1);}
+    100% {transform: translate(0px,0px)scaleY(1);}
+}
+
+
+.sec1_txt2>h1 {
+    font-family: 'VT323', monospace;
+    color: #fff;
+    /* font-size: 150px; */
+    font-size: 9.5rem;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+.scrolldown {
+    opacity: 0%;
+    font-family: 'VT323', monospace;
+    margin-top: 150px;
+    color: #fff;
+    /* font-size: 60px; */
+    font-size: 4rem;
+    font-weight: bold;
+    letter-spacing: 5px;
+    animation: scrolldown 1.7s infinite;
+    animation-timing-function: cubic-bezier(0, 1, 0, 1);
+}
+
+@-webkit-keyframes scrolldown {
+    0% {-webkit-opacity: 0%;}
+    50%{-webkit-opacity: 100%;} 
+    100% {-webkit-opacity: 0%;}
+}
+
+@keyframes scrolldown {
+    0% {opacity: 0%;}
+    50%{opacity: 100%;} 
+    100% {opacity: 0%;}
+}
+
+@media (max-width: 1024px) {
+    .sec1_bg {
+        padding: 150px 0;
+    }
+    .sec1_txtbox1 {
+        width: 70%;;
+        margin-bottom: 450px;
+    }
+    .sec1_txt_wrap {
+        width: 80%;
+    }
+    .scrolldown {
+        font-size: 100px;
+        margin-bottom: 50px;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .sec1_bg {
+        padding: 100px 0;
+    }
+    .sec1_txtbox1 {
+        width: 60%;
+        padding: 40px 0;
+        border: 15px solid #fff;
+        margin-top: 20px;
+        margin-bottom: 400px;
+    }
+    .sec1_txt_wrap {
+        width: 80%;
+        /* background: #000; */
+    }
+    .sec1_txtbox1 h1 {
+        font-size: 90px;
+    }
+    .sec1_txt1 img {
+        width: 55px;
+        margin-top: 20px;
+        margin-left: 3px;
+    }
+    .scrolldown {
+        font-size: 60px;
+        margin-bottom: 55px;
+    }
+}
+
+@media (max-width:540px) {
+    .sec1_bg {
+        padding: 30px 0;
+    }
+    .sec1_txtbox1 {
+        width: 70%;
+        margin-bottom: 280px;
+    }
+    .sec1_txtbox1 h1 {
+        font-size: 70px;
+        letter-spacing: 3px;;
+    }
+    .sec1_txt1 img {
+        width: 40px;
+        margin-top: 15px;
+    }
+    .scrolldown {
+        font-size: 45px;
+        margin-bottom: 65px;
+    }
+
+    @keyframes jump {
+        0% {transform: translate(90px,0px)scaleY(0.9);}
+        10% {transform: translate(80px,-15px)scaleY(1);}
+        20% {transform: translate(70px,0px)scaleY(0.9);}
+        30% {transform: translate(60px,-15px)scaleY(1);}
+        40% {transform: translate(50px,0px)scaleY(0.9);}
+        50% {transform: translate(40px,-15px)scaleY(1);}
+        60% {transform: translate(30px,0px)scaleY(0.9);}
+        70% {transform: translate(20px,-15px)scaleY(1);}
+        80% {transform: translate(10px,0px)scaleY(0.9);}
+        90% {transform: translate(0px,-15px)scaleY(1);}
+        100% {transform: translate(0px,0px)scaleY(1);}
+    }
+}
+
+@media (max-width: 375px) {
+    .sec1_bg {
+        padding: 100px 0; 
+    }
+    .sec1_txtbox1 {
+        margin-top: 30px;
+        margin-bottom: 300px;
+    }
+    .sec1_txt_wrap {
+        /* background: #000; */
+        width: 90%;
+    }
+    .sec1_txtbox1 h1 {
+        font-size: 55px;
+        letter-spacing: 2.5px;
+        margin-left: 10px;
+    }
+    .sec1_txt1 img {
+        width: 33px;
+        margin-top: 12px;
+    }
+    .scrolldown {
+        font-size: 35px;
+        margin-bottom: 27px;
+    }
+    @keyframes jump {
+        0% {transform: translate(100px,0px)scaleY(0.9);}
+        10% {transform: translate(90px,-15px)scaleY(1);}
+        20% {transform: translate(80px,0px)scaleY(0.9);}
+        30% {transform: translate(70px,-15px)scaleY(1);}
+        40% {transform: translate(60px,0px)scaleY(0.9);}
+        50% {transform: translate(50px,-15px)scaleY(1);}
+        60% {transform: translate(40px,0px)scaleY(0.9);}
+        70% {transform: translate(30px,-15px)scaleY(1);}
+        80% {transform: translate(20px,0px)scaleY(0.9);}
+        90% {transform: translate(10px,-15px)scaleY(1);}
+        100% {transform: translate(0px,0px)scaleY(1);}
+    }
+}
+
+
+/* section1 end */
+
+
+
+
+
+/* section 2 */
+
+.sec2_bg {
+    position: relative;
+    height: 100vh;
+    /* padding: 200px 0; */
+    background: #7286f7;
+    overflow: hidden;
+    z-index: -2;
+}
+
+.clouds {
+    position: absolute;
+    top: 0;
+    animation: clouds 2.5s ease-in-out infinite;
+    z-index: -1;
+}
+
+.clouds>img:nth-child(1) {
+    position: absolute;
+    top: 30px;
+    left: -40px;
+    width: 100px;
+}
+.clouds>img:nth-child(2) {
+    position: absolute;
+    top: 90px;
+    left: 200px;
+    width: 160px;
+}
+.clouds>img:nth-child(3) {
+    position: absolute;
+    top: 30px;
+    left: 550px;
+    width: 90px;
+}
+.clouds>img:nth-child(4) {
+    position: absolute;
+    top: 120px;
+    left: 800px;
+    width: 180px;
+}
+.clouds>img:nth-child(5) {
+    position: absolute;
+    top: 90px;
+    left: 1100px;
+    width: 100px;
+}
+.clouds>img:nth-child(6) {
+    position: absolute;
+    top: 40px;
+    left: 1350px;
+    width: 130px;
+}
+
+@keyframes clouds {
+    0% { transform: translateY(-5px);}
+    50% { transform: translateY(0px);}
+    100% {transform: translateY(-5px);}
+}
+
+.sec2_txtbox {
+    width: 100%;
+    margin-top: 140px;
+    /* position: absolute; */
+    /* bottom: 0; */
+}
+.sec2_txtbox>img {
+    display: block;
+    width: 55%;
+    margin: 0 auto;
+}
+
+
+
+.ground_brick>img {
+    position: absolute;
+    bottom: -30px;
+    width: 100%;
+}
+
+
+
+
+.chasing_anime {
+    position: absolute;
+    bottom: 65px;
+}
+
+.mario_run {
+    position: absolute;
+    bottom: 0;
+    width: 50px;
+    animation: m_move 20s linear infinite;
+    /* margin-top: 300px; */
+}
+
+@keyframes m_move {
+    0%  {left: -850px;}
+    50% {left: 2250px;}
+    100% {left: -850px;}
+}
+
+.sm_wrap {
+    position: absolute;
+    bottom: 0;
+    animation: sm_opacity 20s linear infinite;
+}
+
+@keyframes sm_opacity {
+    0% {opacity: 1;}
+    49% {opacity: 1;}
+    50% {opacity: 0;}
+    99% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.sm {
+    position: absolute;
+    bottom: 0;
+    width: 50px;
+    /* left: 50px; */
+}
+.sm_run1 {
+    animation: m_run1 0.2s linear infinite;
+    animation-timing-function: cubic-bezier(0, 1, 0, 1);
+}
+.sm_run2 {
+    opacity: 0;
+    animation: m_run2 0.2s linear infinite;
+    animation-timing-function: cubic-bezier(0, 1, 0, 1);
+}
+.sm_run3 {
+    opacity: 0;
+    animation: m_run3 0.2s linear infinite;
+    animation-timing-function: cubic-bezier(0, 1, 0, 1);
+}
+
+.bm_wrap {
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    animation: bm_opacity 20s infinite;
+}
+
+@keyframes bm_opacity {
+    0% {opacity: 0;}
+    49% {opacity: 0;}
+    50% {opacity: 1;}
+    99% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+.bm {
+    position: absolute;
+    width: 40px;
+    bottom: 0;
+}
+
+.bm_run1 {
+    animation: m_run1 0.2s linear infinite;
+    animation-timing-function: cubic-bezier(0, 1, 0, 1);
+}
+.bm_run2 {
+    opacity: 0;
+    animation: m_run2 0.2s linear infinite;
+    animation-timing-function: cubic-bezier(0, 1, 0, 1);
+}
+.bm_run3 {
+    opacity: 0;
+    animation: m_run3 0.2s linear infinite;
+    animation-timing-function: cubic-bezier(0, 1, 0, 1);
+}
+
+@keyframes m_run1 {
+    0% {opacity: 1;}
+    33.33% {opacity: 0;}
+    66.66% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@keyframes m_run2 {
+    0% {opacity: 0;}
+    33.33% {opacity: 1;}
+    66.66% {opacity: 0;}
+    100% {opacity: 0;}
+}
+@keyframes m_run3 {
+    0% {opacity: 0;}
+    33.33% {opacity: 0;}
+    66.66% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+/* mario_run end */
+
+.goomba_run {
+    position: relative;
+    width: 50px;
+    animation: g_move 20s linear infinite;
+}
+.goomba_run>img {
+    position: absolute;
+    width: 50px;
+    bottom: 0;
+}
+.g_run1 {
+    animation: g_run1 0.25s infinite;
+    animation-timing-function: cubic-bezier(0, 1, 0, 1);
+}
+.g_run2 {
+    opacity: 0;
+    animation: g_run2 0.25s infinite;
+    animation-timing-function: cubic-bezier(0, 1, 0, 1);
+}
+
+@keyframes g_move {
+    0%  {left: -1000px;}
+    50% {left: 2000px;}
+    100% {left: -1000px;}
+}
+
+
+
+@keyframes g_run1 {
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@keyframes g_run2 {
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+/* goomba_run end */
+
+/* chasing_anime end */
+
+/* section2 end */
+
+
+
+/* section3 */
+
+.sec3_bg {
+    background: #1e3996;
+}
+.sec3_pattern {
+    width: 100%;
+    padding: 500px 0;
+    background-image: url(../images/page3_bg_mushroom2.png);
+    background-size: 100px 100px;
+    opacity: 30%;
+    animation: move 150s linear infinite;
+}
+
+@keyframes move {
+    0% {background-position: 0 2000px;}
+    100% {background-position: 2000px 0;}
+}
+
+/* sec3_bg end */
+
+
+
+
+
+
