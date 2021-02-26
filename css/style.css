@@ -15,6 +15,7 @@ body {
 
 /* section background */
 .sec1_bg {
+    position: relative;
     height: 100vh;
     background-image: url(../images/title_bg.jpg);
     background-position: center;
@@ -61,10 +62,13 @@ body {
 /* section1 title end */
 
 /* section1 scrolldown */
+.sec1_scrolldown {
+    position: absolute;
+    bottom: 5vw;
+}
 .sec1_scrolldown>p {
     opacity: 0%;
     font-family: 'VT323', monospace;
-    margin-top: 5vw;
     color: #fff;
     font-size: 4.5rem;
     font-weight: bold;
