@@ -27,7 +27,7 @@ body {
 .sec1_title_wrap {
     width: 100%;
     /* background: gold; */
-    padding-top: 10vh;
+    padding-top: 5vw;
 }
 
 .sec1_titlebox {
@@ -64,8 +64,7 @@ body {
 .sec1_scrolldown>p {
     opacity: 0%;
     font-family: 'VT323', monospace;
-    /* margin-top: 4%; */
-    margin-top: 10vh;
+    margin-top: 5vw;
     color: #fff;
     font-size: 4.5rem;
     font-weight: bold;
