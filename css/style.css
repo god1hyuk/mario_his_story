@@ -28,7 +28,7 @@ body {
 .sec1_title_wrap {
     width: 100%;
     /* background: gold; */
-    padding-top: 5vw;
+    padding-top: 8vh;
 }
 
 .sec1_titlebox {
@@ -54,7 +54,6 @@ body {
 .sec1_title2>h1 {
     font-family: 'VT323', monospace;
     color: #fff;
-    /* font-size: 150px; */
     font-size: 9rem;
     font-weight: bold;
     letter-spacing: 5px;
@@ -64,7 +63,7 @@ body {
 /* section1 scrolldown */
 .sec1_scrolldown {
     position: absolute;
-    bottom: 5vw;
+    bottom: 10vh;
 }
 .sec1_scrolldown>p {
     opacity: 0%;
@@ -85,128 +84,8 @@ body {
 /* section1 scrolldown end */
 
 
-@media (max-width: 1024px) {
-    .sec1_bg {
-        padding: 150px 0;
-    }
-    .sec1_txtbox1 {
-        width: 70%;;
-        margin-bottom: 450px;
-    }
-    .sec1_txt_wrap {
-        width: 80%;
-    }
-    .scrolldown {
-        font-size: 100px;
-        margin-bottom: 50px;
-    }
-    
-}
 
-@media (max-width: 768px) {
-    .sec1_bg {
-        padding: 100px 0;
-    }
-    .sec1_txtbox1 {
-        width: 60%;
-        padding: 40px 0;
-        border: 15px solid #fff;
-        margin-top: 20px;
-        margin-bottom: 400px;
-    }
-    .sec1_txt_wrap {
-        width: 80%;
-        /* background: #000; */
-    }
-    .sec1_txtbox1 h1 {
-        font-size: 90px;
-    }
-    .sec1_txt1 img {
-        width: 55px;
-        margin-top: 20px;
-        margin-left: 3px;
-    }
-    .scrolldown {
-        font-size: 60px;
-        margin-bottom: 55px;
-    }
-}
 
-@media (max-width:540px) {
-    .sec1_bg {
-        padding: 30px 0;
-    }
-    .sec1_txtbox1 {
-        width: 70%;
-        margin-bottom: 280px;
-    }
-    .sec1_txtbox1 h1 {
-        font-size: 70px;
-        letter-spacing: 3px;;
-    }
-    .sec1_txt1 img {
-        width: 40px;
-        margin-top: 15px;
-    }
-    .scrolldown {
-        font-size: 45px;
-        margin-bottom: 65px;
-    }
-
-    @keyframes jump {
-        0% {transform: translate(90px,0px)scaleY(0.9);}
-        10% {transform: translate(80px,-15px)scaleY(1);}
-        20% {transform: translate(70px,0px)scaleY(0.9);}
-        30% {transform: translate(60px,-15px)scaleY(1);}
-        40% {transform: translate(50px,0px)scaleY(0.9);}
-        50% {transform: translate(40px,-15px)scaleY(1);}
-        60% {transform: translate(30px,0px)scaleY(0.9);}
-        70% {transform: translate(20px,-15px)scaleY(1);}
-        80% {transform: translate(10px,0px)scaleY(0.9);}
-        90% {transform: translate(0px,-15px)scaleY(1);}
-        100% {transform: translate(0px,0px)scaleY(1);}
-    }
-}
-
-@media (max-width: 375px) {
-    .sec1_bg {
-        padding: 100px 0; 
-    }
-    .sec1_txtbox1 {
-        margin-top: 30px;
-        margin-bottom: 300px;
-    }
-    .sec1_txt_wrap {
-        /* background: #000; */
-        width: 90%;
-    }
-    .sec1_txtbox1 h1 {
-        font-size: 55px;
-        letter-spacing: 2.5px;
-        margin-left: 10px;
-    }
-    .sec1_txt1 img {
-        width: 33px;
-        margin-top: 12px;
-    }
-    .scrolldown {
-        font-size: 35px;
-        margin-bottom: 27px;
-    }
-    @keyframes jump {
-        0% {transform: translate(100px,0px)scaleY(0.9);}
-        10% {transform: translate(90px,-15px)scaleY(1);}
-        20% {transform: translate(80px,0px)scaleY(0.9);}
-        30% {transform: translate(70px,-15px)scaleY(1);}
-        40% {transform: translate(60px,0px)scaleY(0.9);}
-        50% {transform: translate(50px,-15px)scaleY(1);}
-        60% {transform: translate(40px,0px)scaleY(0.9);}
-        70% {transform: translate(30px,-15px)scaleY(1);}
-        80% {transform: translate(20px,0px)scaleY(0.9);}
-        90% {transform: translate(10px,-15px)scaleY(1);}
-        100% {transform: translate(0px,0px)scaleY(1);}
-    }
-}
 
 
 /* section1 end */
@@ -220,7 +99,6 @@ body {
 .sec2_bg {
     position: relative;
     height: 100vh;
-    /* padding: 200px 0; */
     background: #7286f7;
     overflow: hidden;
     z-index: -2;
@@ -236,7 +114,7 @@ body {
 .clouds>img:nth-child(1) {
     position: absolute;
     top: 30px;
-    left: -40px;
+    left: -2vw;
     width: 100px;
 }
 .clouds>img:nth-child(2) {
@@ -289,19 +167,16 @@ body {
 }
 
 
-
 .ground_brick>img {
     position: absolute;
     bottom: -30px;
     width: 100%;
 }
 
-
-
-
 .chasing_anime {
     position: absolute;
-    bottom: 65px;
+    height: 100vh;
+    bottom: 9.5%;
 }
 
 .mario_run {
@@ -370,8 +245,8 @@ body {
 
 .bm {
     position: absolute;
-    width: 40px;
     bottom: 0;
+    width: 40px;
 }
 
 .bm_run1 {
@@ -411,14 +286,18 @@ body {
 /* mario_run end */
 
 .goomba_run {
-    position: relative;
+    position: absolute;
+    bottom: 0;
     width: 50px;
     animation: g_move 20s linear infinite;
 }
-.goomba_run>img {
+.goomba_wrap {
+    position: relative;
+}
+.goomba {
     position: absolute;
-    width: 50px;
     bottom: 0;
+    width: 50px;
 }
 .g_run1 {
     animation: g_run1 0.25s infinite;
@@ -435,8 +314,6 @@ body {
     50% {left: 2000px;}
     100% {left: -1000px;}
 }
-
-
 
 @keyframes g_run1 {
     0% {opacity: 1;}
