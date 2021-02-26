@@ -157,7 +157,7 @@ body {
 .sec2_txtbox {
     position: relative;
     width: 100%;
-    height: 53.5vh;
+    height: 50vh;
     /* margin-top: 140px; */
     /* position: absolute; */
     /* bottom: 0; */
@@ -174,36 +174,81 @@ body {
 
 
 .anime_container {
-    /* position: absolute;
-    bottom: 0; */
     width: 100%;
-    height: 26.5vh;
-    background: gray;
-}
-.chasing_anime {
-    position: absolute;
+    height: 25vh;
+    padding-top: 30px;
+    /* background: gray; */
 }
 
 .ground_brick>img {
-    position: absolute;
-    bottom: -4.3vh;
     width: 100%;
 }
 
+.goomba_run {
+    float: left;
+    width: 50px;
+    height: 80px;
+    /* background: green; */
+    animation: g_move 20s linear infinite;
+}
+
+.goomba {
+    position: absolute;
+    bottom: 0;
+    width: 50px;
+}
+.g_run1 {
+    animation: g_run1 0.25s infinite;
+    animation-timing-function: cubic-bezier(0, 1, 0, 1);
+}
+.g_run2 {
+    opacity: 0;
+    animation: g_run2 0.25s infinite;
+    animation-timing-function: cubic-bezier(0, 1, 0, 1);
+}
+
+@keyframes g_move {
+    0%  {
+        transform: translateX(-1000px);
+    }
+    50% {
+        transform: translateX(2000px);
+    }
+    100% {
+        transform: translateX(-1000px);
+    }
+}
+
+@keyframes g_run1 {
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@keyframes g_run2 {
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+/* goomba_run end */
+
 .mario_run {
-    position: absolute;  
-    top: 0;
     width: 50px;
     height: 80px;
     /* background: green; */
     animation: m_move 20s linear infinite;
-    /* margin-top: 300px; */
 }
 
 @keyframes m_move {
-    0%  {left: -850px;}
-    50% {left: 2250px;}
-    100% {left: -850px;}
+    0%  {
+        transform: translateX(-850px);
+    }
+    50% {
+        transform: translateX(2250px);
+    }
+    100% {
+        transform: translateX(-850px);
+    }
 }
 
 .sm_wrap {
@@ -297,51 +342,7 @@ body {
 
 /* mario_run end */
 
-.goomba_run {
-    position: absolute;
-    bottom: 0;
-    top:0;
-    width: 50px;
-    height: 80px;
-    /* background: green; */
-    animation: g_move 20s linear infinite;
-}
-.goomba_wrap {
-    /* position: relative; */
-}
-.goomba {
-    position: absolute;
-    bottom: 0;
-    width: 50px;
-}
-.g_run1 {
-    animation: g_run1 0.25s infinite;
-    animation-timing-function: cubic-bezier(0, 1, 0, 1);
-}
-.g_run2 {
-    opacity: 0;
-    animation: g_run2 0.25s infinite;
-    animation-timing-function: cubic-bezier(0, 1, 0, 1);
-}
 
-@keyframes g_move {
-    0%  {left: -1000px;}
-    50% {left: 2000px;}
-    100% {left: -1000px;}
-}
-
-@keyframes g_run1 {
-    0% {opacity: 1;}
-    50% {opacity: 0;}
-    100% {opacity: 1;}
-}
-@keyframes g_run2 {
-    0% {opacity: 0;}
-    50% {opacity: 1;}
-    100% {opacity: 0;}
-}
-
-/* goomba_run end */
 
 /* chasing_anime end */
 
