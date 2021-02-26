@@ -13,6 +13,7 @@ body {
 
 /* section1 */
 
+/* section background */
 .sec1_bg {
     height: 100vh;
     background-image: url(../images/title_bg.jpg);
@@ -20,10 +21,13 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+/* section1 background end */
+
+/* section1 title */
 .sec1_title_wrap {
     width: 100%;
     /* background: gold; */
-    padding-top: 5%;
+    padding-top: 10vh;
 }
 
 .sec1_titlebox {
@@ -54,11 +58,14 @@ body {
     font-weight: bold;
     letter-spacing: 5px;
 }
+/* section1 title end */
 
+/* section1 scrolldown */
 .sec1_scrolldown>p {
     opacity: 0%;
     font-family: 'VT323', monospace;
-    margin-top: 4%;
+    /* margin-top: 4%; */
+    margin-top: 10vh;
     color: #fff;
     font-size: 4.5rem;
     font-weight: bold;
@@ -72,6 +79,8 @@ body {
     50%{opacity: 100%;} 
     100% {opacity: 0%;}
 }
+/* section1 scrolldown end */
+
 
 @media (max-width: 1024px) {
     .sec1_bg {
