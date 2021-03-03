@@ -85,12 +85,24 @@ body {
 
 .castle_wrap {
     position: absolute;
-    bottom: 80px;
+    bottom: 14vh;
+    right: 15vw;
+    width: 24vw;
     /* background: green; */
     z-index: -1;
 }
+.castle {
+    /* background: orange; */
+}
 .castle>img {
-    width: 350px;
+    width: 24vw;
+}
+.castle_flag {
+    position: absolute;
+    top: 6vh;
+    left: 130px;
+    /* background: pink; */
+    z-index: -1;
 }
 .castle_flag>img {
     width: 70px;
