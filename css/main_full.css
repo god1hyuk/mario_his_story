@@ -1,0 +1,16 @@
+header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: palegoldenrod;
+    z-index: 999;
+}
+header nav ul {
+    display: flex; 
+    justify-content: center;
+}
+header nav ul li {
+    margin: 0 20px;
+    list-style: none;
+}
