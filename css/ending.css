@@ -25,46 +25,44 @@ body {
 
 /* secton2 cloud anime */
 .clouds {
-    height: 25vh;
     animation: clouds 2.5s ease-in-out infinite;
     z-index: -1;
 }
-.cloudbox {
-    float: left;
-    width: 16.66%;
-    height: 25vh;
-    /* background: pink; */
-}
-.cloudbox>img {
+.clouds>img {
+    position: absolute;
     display: block;
-    margin: 0 auto;
+}
+.clouds>img:nth-child(1) {
+    top: 5vh;
+    left: -2%;
+    width: 110px;
+}
+.clouds>img:nth-child(2) {
+    top: 12vh;
+    left: 12%;
+    width: 180px;
+}
+.clouds>img:nth-child(3) {
+    top: 6vh;
+    left: 35%;
+    width: 110px;
+}
+.clouds>img:nth-child(4) {
+    top: 10vh;
+    right: 35%;
+    width: 150px;
+}
+.clouds>img:nth-child(5) {
+    top: 10vh;
+    right: 15%;
+    width: 120px;
+}
+.clouds>img:nth-child(6) {
+    top: 5vh;
+    right: -3%;
+    width: 140px;
 }
 
-
-.cloud1>img {
-    width: 5.25vw;
-    margin-top: 10%;
-}
-.cloud2>img {
-    width: 8.5vw;
-    margin-top: 25%;
-}
-.cloud3>img {
-    width: 4.7vw;
-    margin-top: 20%;
-}
-.cloud4>img {
-    width: 9.45vw;
-    margin-top: 30%;
-}
-.cloud5>img {
-    width: 5.25vw;
-    margin-top: 18%;
-}
-.cloud6>img {
-    width: 6.8vw;
-    margin-top: 15%;
-}
 
 @keyframes clouds {
     0% { transform: translateY(-5px);}
@@ -82,28 +80,181 @@ body {
 .ground_brick>img {
     width: 100%;
 }
-
 .castle_wrap {
     position: absolute;
-    bottom: 14vh;
+    bottom: 12vh;
     right: 15vw;
     width: 24vw;
     /* background: green; */
     z-index: -1;
 }
-.castle {
-    /* background: orange; */
-}
 .castle>img {
     width: 24vw;
 }
-.castle_flag {
-    position: absolute;
-    top: 6vh;
-    left: 130px;
-    /* background: pink; */
-    z-index: -1;
-}
 .castle_flag>img {
-    width: 70px;
+    position: absolute;
+    top: -8vh;
+    left: 9vw;
+    width: 3.6vw;
+    z-index: -1;
+    animation: flag 1s linear;
+}
+
+@keyframes flag {
+    from {top: 5vh;}
+    to {top: -8vh;}
+}
+
+
+/* toad anime */
+.toad_wrap {
+    position: relative;
+    bottom: 65px;
+    left: 55vw;
+}
+.jumping_toad {
+    position: absolute;
+    width: 40px;
+    opacity: 0;
+    animation: j_toad 1s linear infinite;
+    animation-timing-function: cubic-bezier(0, 1, 0, 1);
+}
+.standing_toad {
+    position: absolute;
+    width: 40px;
+    animation: s_toad 1s linear infinite;
+    animation-timing-function: cubic-bezier(0, 1, 0, 1);
+}
+
+@keyframes j_toad {
+    0% {opacity: 0}
+    50% {opacity: 1}
+    100% {opacity: 0}
+}
+@keyframes s_toad {
+    0% {opacity: 1}
+    50% {opacity: 0}
+    100% {opacity: 1}
+}
+/* toad anime end */
+
+/* peach anime */
+.peach_wrap {
+    position: relative;
+    bottom: 93px;
+    left: 70vw;
+}
+.left_peach {
+    position: absolute;
+    width: 50px;
+    animation: l_peach 2s linear infinite;
+    animation-timing-function: cubic-bezier(0, 1, 0, 1);
+}
+.front_peach {
+    position: absolute;
+    width: 50px;
+    opacity: 0;
+    animation: f_peach 2s linear infinite;
+    animation-timing-function: cubic-bezier(0, 1, 0, 1);
+}
+
+@keyframes l_peach {
+    0% {opacity: 1}
+    50% {opacity: 0}
+    100% {opacity: 1}
+}
+@keyframes f_peach {
+    0% {opacity: 0}
+    50% {opacity: 1}
+    100% {opacity: 0}
+}
+/* peach anime end */
+
+
+/* luigi anime */
+.luigi_wrap {
+    position: relative;
+    bottom: 60px;
+    left: 80vw;
+}
+.jumping_luigi {
+    position: absolute;
+    bottom: 0;
+    width: 58px;
+    opacity: 0;
+    animation: j_luigi 0.8s linear infinite;
+    animation-timing-function: cubic-bezier(0, 1, 0, 1);
+}
+.standing_luigi {
+    position: absolute;
+    width: 60px;
+    animation: s_luigi 0.8s linear infinite;
+    animation-timing-function: cubic-bezier(0, 1, 0, 1);
+}
+
+@keyframes j_luigi {
+    0% {opacity: 0}
+    50% {opacity: 1}
+    100% {opacity: 0}
+}
+@keyframes s_luigi {
+    0% {opacity: 1}
+    50% {opacity: 0}
+    100% {opacity: 1}
+}
+/* luigi anime end */
+
+
+
+
+.e_bm_wrap {
+    position: relative;
+    bottom: 75px;
+    left: 66vw;
+    animation: e_m_move 5s linear;
+}
+
+@keyframes e_m_move {
+    from {left: -10vw;}
+    to {left: 66vw}
+}
+
+.e_bm {
+    position: absolute;
+    width: 40px;
+    transform:scaleX(-1);
+}
+
+.e_bm_run1 {
+    animation: m_run1 0.2s linear infinite;
+    animation-timing-function: cubic-bezier(0, 1, 0, 1);
+}
+.e_bm_run2 {
+    opacity: 0;
+    animation: m_run2 0.2s linear infinite;
+    animation-timing-function: cubic-bezier(0, 1, 0, 1);
+}
+.e_bm_run3 {
+    opacity: 0;
+    animation: m_run3 0.2s linear infinite;
+    animation-timing-function: cubic-bezier(0, 1, 0, 1);
+}
+
+@keyframes m_run1 {
+    0% {opacity: 1;}
+    33.33% {opacity: 0;}
+    66.66% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@keyframes m_run2 {
+    0% {opacity: 0;}
+    33.33% {opacity: 1;}
+    66.66% {opacity: 0;}
+    100% {opacity: 0;}
+}
+@keyframes m_run3 {
+    0% {opacity: 0;}
+    33.33% {opacity: 0;}
+    66.66% {opacity: 1;}
+    100% {opacity: 0;}
 }

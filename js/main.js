@@ -1,6 +1,6 @@
 $(function (){
     $('#fullpage').fullpage({
-        anchors: ['section1','section2','section3','section4','section5','section6','section7','section8'],
+        anchors: ['section1','section2','section3','section4','section5','section6','section7','section8','section9'],
         navigation: true,
         navigationPosition: 'right',
         scrollingSpeed: 1000,
@@ -9,15 +9,20 @@ $(function (){
         onLeave (index, nextIndex, driection) {
             if(index==3) {
                 $('.standing_mario>img').css("bottom","-100px").css("transition","all 1s linear");
-                $('.typing>ul>li').html("");
+                $('.typing>ul>li').html("");    
+            }
+
+            
+            if(index==9) {
+                // $('.castle_flag>img').animate({
+                //     top: '5vh'
+                // }, 1000);
             }
         },
        
         afterLoad: function(anchorLink,index){
             if (index==3) {
-                
-                $('.typing>ul>li').html("");
-                
+
                 let typingBool = false;
                 let typingIdx = 0;
                 let liIndex = 0;
@@ -64,12 +69,63 @@ $(function (){
                 // section1 typing effect end
 
                 $('.standing_mario>img').css('bottom','0').css('transition','all 1s linear');
+
  
+            }
+
+            if (index==9) {
+                
+
+                setTimeout(function(){
+
+                    $('.e_bm_wrap').css('display','block').css('animation-play-state','running');
+                }, 1000);
+
+                setTimeout(function(){
+                    $('.e_bm').animate({
+                        animation: 'none'
+                    }, 100),
+                    $('.e_bm_run1').animate({
+                        opacity: '0'
+                    }, 10),
+                    $('.standing_bm').css('display','block');
+                }, 6000);
+
+                setTimeout(function(){
+                    $('.castle_flag>img').animate({
+                        top: '-8vh'
+                    }, 1000);
+                }, 7000);
+
+                
+                setTimeout(function(){
+                    $('.fireworks>img:nth-child(1)').css('animation-play-state','running'),
+                    $('.fireworks>img:nth-child(2)').css('animation-play-state','running'),
+                    $('.fireworks>img:nth-child(3)').css('animation-play-state','running'),
+                    $('.fireworks>img:nth-child(4)').css('animation-play-state','running');
+                }, 8000);
+
+                setTimeout(function(){
+                    $('.jumping_bm').css('display','block'),
+                    $('.jumping_bm').css('animation-play-state','running').css('display','block'),
+                    $('.standing_bm').css('animation-play-state','running'),
+                    $('.left_peach').css('animation-play-state','running'),
+                    $('.front_peach').css('animation-play-state','running');
+                }, 10000);
+
+
+
+                
             }
         }
 
     });
 });
+
+
+
+
+
 
 
         $(function(){
@@ -96,17 +152,3 @@ $(function (){
         });
 
         // // mario jump end
-
-        // $(function(){
-        //     $(window).scroll(function(){
-        //         if($(this).scrollTop()>200) {
-        //             $('.standing_mario').css("transform","translateY(120px)").css("transition","all 1s linear"),
-        //             $('.jump_txt').css("display","none");
-        //         } else if ($(this).scrollTop()<200) {
-        //             $('.standing_mario').css("transform","translateY(5px)").css("transition","all 1s linear"),
-        //             $('.jump_txt').css("display","block");
-        //         }
-        //     });
-        // });
-
-        // mario scroll end

@@ -9,6 +9,9 @@
 body {
     font-size: 16px;
 }
+#fp-nav ul li a span {
+    background: #fff;
+}
 
 
 /* section1 */
@@ -30,7 +33,6 @@ body {
     /* background: gold; */
     padding-top: 8vh;
 }
-
 .sec1_titlebox {
     background: #e20706;
     border: 20px solid #fff;
@@ -39,7 +41,7 @@ body {
     /* white-space: nowrap; */
 }
 .sec1_txt_wrap {
-    margin: 0 auto; 
+    margin: 0 auto;
     /* background: #000; */
 }
 .sec1_title1>h1 {
@@ -83,12 +85,7 @@ body {
 }
 /* section1 scrolldown end */
 
-
 /* section1 end */
-
-
-
-
 
 /* section2 */
 
@@ -104,46 +101,44 @@ body {
 
 /* secton2 cloud anime */
 .clouds {
-    height: 25vh;
     animation: clouds 2.5s ease-in-out infinite;
     z-index: -1;
 }
-.cloudbox {
-    float: left;
-    width: 16.66%;
-    height: 25vh;
-    /* background: pink; */
-}
-.cloudbox>img {
+.clouds>img {
+    position: absolute;
     display: block;
-    margin: 0 auto;
 }
-
-
-.cloud1>img {
-    width: 100px;
-    margin-top: 10%;
+.clouds>img:nth-child(1) {
+    top: 5vh;
+    left: -2%;
+    width: 110px;
 }
-.cloud2>img {
-    width: 160px;
-    margin-top: 25%;
-}
-.cloud3>img {
-    width: 90px;
-    margin-top: 20%;
-}
-.cloud4>img {
+.clouds>img:nth-child(2) {
+    top: 12vh;
+    left: 12%;
     width: 180px;
-    margin-top: 30%;
 }
-.cloud5>img {
-    width: 100px;
-    margin-top: 18%;
+.clouds>img:nth-child(3) {
+    top: 6vh;
+    left: 35%;
+    width: 110px;
 }
-.cloud6>img {
-    width: 130px;
-    margin-top: 15%;
+.clouds>img:nth-child(4) {
+    top: 10vh;
+    right: 35%;
+    width: 150px;
 }
+.clouds>img:nth-child(5) {
+    top: 10vh;
+    right: 15%;
+    width: 120px;
+}
+.clouds>img:nth-child(6) {
+    top: 5vh;
+    right: -3%;
+    width: 140px;
+}
+
 
 @keyframes clouds {
     0% { transform: translateY(-5px);}
@@ -153,18 +148,57 @@ body {
 /* section2 clound anime end */
 
 /* section2 txtbox */
-.sec2_txtbox {
+.sec2_txtbox_wrap {
     position: relative;
-    width: 100%;
+    width: 70%;
+    height: 60vh;
+    margin: 0 auto;
+    margin-top: 15vh;
+    /* background: lightgray; */
 }
-.sec2_txtbox>img {
+.sec2_txtbox_outter {
     position: absolute;
-    top: -8vh;
+    top: 50%;
     left: 50%;
-    width: 60%;
-    display: block;
-    transform: translateX(-50%);
+    transform: translate(-50%,-50%);
+    background: #fff;
+    border: 5px solid #181818;
+    border-radius: 2%;
+    width: 96%;
+    height: 90%;
 }
+.sec2_txtbox_inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    border: 10px solid #181818;
+    border-radius: 2%;
+    width: 95%;
+    height: 88%;
+    /* margin: 0 auto; */
+}
+.sec2_txtbox_wrap>img {
+    position: absolute;
+    width: 6%;
+}
+.sec2_txtbox_wrap>img:nth-child(1) {
+    top: 0;
+    left: 0;
+}
+.sec2_txtbox_wrap>img:nth-child(2) {
+    top: 0;
+    right: 0;
+}
+.sec2_txtbox_wrap>img:nth-child(3) {
+    bottom: 0;
+    left: 0;
+}
+.sec2_txtbox_wrap>img:nth-child(4) {
+    bottom: 0;
+    right: 0;
+} 
 /* section2 txtbox end */
 
 /* section2 chasing anime */
@@ -341,30 +375,588 @@ body {
 /* section2 end */
 
 
-
 /* section3 */
 
+/* section3 background */
 .sec3_bg {
+    position: relative;
     background: #1e3996;
+    height: 100vh;
 }
 .sec3_pattern {
-    width: 100%;
-    padding: 500px 0;
+    height: 100vh;
     background-image: url(../images/page3_bg_mushroom2.png);
     background-size: 100px 100px;
     opacity: 30%;
-    animation: move 150s linear infinite;
+    animation: pattern 150s linear infinite;
 }
 
-@keyframes move {
+@keyframes pattern {
     0% {background-position: 0 2000px;}
     100% {background-position: 2000px 0;}
 }
+ /* section3 background end */
 
-/* sec3_bg end */
+  /* section3 mario jump anime */
+  .mario_wrap {
+    /* background: lightgray; */
+    width: 160px;
+    height: 240px;
+    position: absolute;
+    bottom: 0px;
+    left: 3%;
+    z-index: 999;
+}
+.mario_wrap:hover {
+    cursor: pointer;
+}
+
+.jump_txt {
+    position: absolute;
+    bottom: 250px;
+    left: 160px;
+    width: 80px;
+    height: 40px;
+    font-family: 'VT323', monospace;
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-align: center;
+    opacity: 0;
+    animation: jump_txt 2s linear infinite;
+    animation-timing-function: cubic-bezier(0, 1, 0, 1);
+    /* animation-play-state: paused; */
+}
+
+/* @keyframes jump_txt {
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 0;}
+} */
+
+.mario {
+    /* background: yellow; */
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    position: relative;
+}
+.pipe {
+    width: 160px;
+}
+.pipe>img {
+    width: 160px;
+    position: absolute;
+    bottom: 0;
+}
+.standing_mario>img {
+    width: 80px;
+    position: absolute;
+    bottom: -100px;
+}
+.jumping_mario>img {
+    width: 70px;
+    opacity: 0;
+}
+/* section3 mario jump anime end */
+
+ /* section3 main container */
+ .container {
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background: pink; */
+}
+
+ /* section3 tilte typing effect */
+ .title_wrap {
+    /* background: #9e9e9e; */
+    height: 16vh;
+}
+.typing_txt {
+    display: none;
+}
+.typing {
+    padding-top: 10px;
+    padding-left: 40px;
+}
+.typing ul li {
+    display: block;
+    font-family: 'VT323', monospace;
+    font-size: 3rem;
+    font-weight: 900;
+    color: #fff;
+}
+.typing ul li.on {
+    display: inline-block;
+    animation: cursor 0.3s 7;
+}
+
+@keyframes cursor {
+    0% {border-right: 1px solid #1e3966;}
+    50% {border-right: 1px solid #fff;}
+    100% {border-right: 1px solid #1e3966;}
+}
+
+/* section3 title typing effect end */
+
+/* section3 mockup slide */
+.m_slide {
+    /* background: crimson; */
+    float: left;
+    /* padding: 20px 0; */
+}
+.prevBtn, .nextBtn {
+    float: left;
+    margin-top: 8%;
+}
+.prevBtn {
+    /* background: purple; */
+    width: 35%;
+}
+.prevBtn>img {
+    width: 7vw;
+    margin-left: 70%;
+}
+.nextBtn {
+    /* background: purple; */
+    width: 35%;
+}
+.nextBtn>img {
+    width: 7vw;
+    float: right;
+    margin-right: 70%;
+}
+.mockup_NES {
+    /* background: gold; */
+    position: relative;
+    float: left;
+}
+.tv80s {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    width: 26vw;
+    z-index: 999;
+}
+.smb1_gif {
+    /* position: absolute; */
+    margin-top: 3vh;
+    margin-left: 4vw;
+    width: 250px;
+}
+.smb2_gif {
+    position: absolute;
+    margin-top: 3vh;
+    margin-left: 4vw;
+    width: 250px;
+}
+
+/* section3 mockup slide end */
+
+ /* section3 txtbox */
+.sec3_txtbox_wrap {
+    position: relative;
+    width: 50%;
+    height: 36vh;
+    margin: 0 auto;
+    margin-top: 10vh;
+    /* background: lightgray; */
+}
+.sec3_txtbox_outter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    border: 5px solid #181818;
+    border-radius: 2%;
+    width: 96%;
+    height: 90%;
+}
+.sec3_txtbox_inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    border: 10px solid #181818;
+    border-radius: 2%;
+    width: 95%;
+    height: 85%;
+    /* margin: 0 auto; */
+}
+.sec3_txtbox_wrap>img {
+    position: absolute;
+    width: 6%;
+}
+.sec3_txtbox_wrap>img:nth-child(1) {
+    top: 0;
+    left: 0;
+}
+.sec3_txtbox_wrap>img:nth-child(2) {
+    top: 0;
+    right: 0;
+}
+.sec3_txtbox_wrap>img:nth-child(3) {
+    bottom: 0;
+    left: 0;
+}
+.sec3_txtbox_wrap>img:nth-child(4) {
+    bottom: 0;
+    right: 0;
+} 
+/* section3 txtbox end */
+
+/* section3 end */
+
+/* section4 */
+
+.sec4_bg {
+    position: relative;
+    background: #1e3996;
+    height: 100vh;
+}
+
+/* section4 end */
+
+
+
+/* section9 */
+
+/* section9 background */
+.sec9_bg {
+    position: relative;
+    height: 100vh;
+    background: #192148;
+    overflow: hidden;
+    z-index: -2;
+}
+/* section9 background end */
+
+/* secton9 cloud anime */
+.e_clouds {
+    animation: e_clouds 2.5s ease-in-out infinite;
+    z-index: -1;
+}
+.e_clouds>img {
+    position: absolute;
+    display: block;
+}
+.e_clouds>img:nth-child(1) {
+    top: 5vh;
+    left: -2%;
+    width: 110px;
+}
+.e_clouds>img:nth-child(2) {
+    top: 12vh;
+    left: 12%;
+    width: 180px;
+}
+.e_clouds>img:nth-child(3) {
+    top: 6vh;
+    left: 35%;
+    width: 110px;
+}
+.e_clouds>img:nth-child(4) {
+    top: 10vh;
+    right: 35%;
+    width: 150px;
+}
+.e_clouds>img:nth-child(5) {
+    top: 10vh;
+    right: 15%;
+    width: 120px;
+}
+.e_clouds>img:nth-child(6) {
+    top: 5vh;
+    right: -3%;
+    width: 140px;
+}
+
+@keyframes e_clouds {
+    0% { transform: translateY(-5px);}
+    50% { transform: translateY(0px);}
+    100% {transform: translateY(-5px);}
+}
+/* section9 clound anime end */
+
+/* section9 fireworks anime */
+
+.fireworks>img {
+    position: absolute;
+    width: 20px;
+    opacity: 0;
+}
+.fireworks>img:nth-child(1) {
+    top: 50vh;
+    right: 40vw;
+    animation: fw1 4s linear infinite;
+    animation-play-state: paused;
+}
+.fireworks>img:nth-child(2) {
+    top: 30vh;
+    right: 32vw;
+    animation: fw2 4s 2s linear infinite;
+    animation-play-state: paused;
+}
+.fireworks>img:nth-child(3) {
+    top: 31vh;
+    right: 18vw;
+    animation: fw3 5s 3s linear infinite;
+    animation-play-state: paused;
+}
+.fireworks>img:nth-child(4) {
+    top: 50vh;
+    right: 12vw;
+    animation: fw4 4s 1s linear infinite;
+    animation-play-state: paused;
+}
+
+@keyframes fw1 {
+    0% {opacity: 0;}
+    40% {opacity: 1; transform: scale(1.5);}
+    100% {opacity: 0; transform: scale(1);}
+}
+@keyframes fw2 {
+    0% {opacity: 0;}
+    40% {opacity: 1; transform: scale(2);}
+    100% {opacity: 0; transform: scale(1);}
+}
+@keyframes fw3 {
+    0% {opacity: 0;}
+    40% {opacity: 1; transform: scale(2.5);}
+    100% {opacity: 0; transform: scale(1);}
+}
+@keyframes fw4 {
+    0% {opacity: 0;}
+    40% {opacity: 1; transform: scale(1.8);}
+    100% {opacity: 0; transform: scale(1);}
+}
+
+/* section9 fireworks anime end */
+
+/* section2 chasing anime */
+.e_anime_container {
+    position: absolute;
+    bottom: -5vh;
+    width: 100%;
+}
+.e_ground_brick>img {
+    width: 100%;
+}
+.castle_wrap {
+    position: absolute;
+    bottom: 12vh;
+    right: 15vw;
+    width: 24vw;
+    /* background: green; */
+    z-index: -1;
+}
+.castle>img {
+    width: 24vw;
+}
+.castle_flag>img {
+    position: absolute;
+    top: 5vh;
+    left: 9vw;
+    width: 3.6vw;
+    z-index: -1;
+}
+
+/* toad anime */
+.toad_wrap {
+    position: relative;
+    bottom: 65px;
+    left: 55vw;
+}
+.jumping_toad {
+    position: absolute;
+    width: 40px;
+    opacity: 0;
+    animation: j_toad 1s linear infinite;
+    animation-timing-function: cubic-bezier(0, 1, 0, 1);
+}
+.standing_toad {
+    position: absolute;
+    width: 40px;
+    animation: s_toad 1s linear infinite;
+    animation-timing-function: cubic-bezier(0, 1, 0, 1);
+}
+
+@keyframes j_toad {
+    0% {opacity: 0}
+    50% {opacity: 1}
+    100% {opacity: 0}
+}
+@keyframes s_toad {
+    0% {opacity: 1}
+    50% {opacity: 0}
+    100% {opacity: 1}
+}
+/* toad anime end */
+
+/* peach anime */
+.peach_wrap {
+    position: relative;
+    bottom: 92px;
+    left: 70vw;
+}
+.left_peach {
+    position: absolute;
+    width: 50px;
+    animation: l_peach 1.8s linear infinite;
+    animation-timing-function: cubic-bezier(0, 1, 0, 1);
+    animation-play-state: paused;
+}
+.front_peach {
+    position: absolute;
+    width: 50px;
+    opacity: 0;
+    animation: f_peach 1.8s linear infinite;
+    animation-timing-function: cubic-bezier(0, 1, 0, 1);
+    animation-play-state: paused;
+}
+
+@keyframes l_peach {
+    0% {opacity: 1}
+    50% {opacity: 0}
+    100% {opacity: 1}
+}
+@keyframes f_peach {
+    0% {opacity: 0}
+    50% {opacity: 1}
+    100% {opacity: 0}
+}
+/* peach anime end */
+
+
+/* luigi anime */
+.luigi_wrap {
+    position: relative;
+    bottom: 48px;
+    left: 80vw;
+}
+.jumping_luigi {
+    position: absolute;
+    bottom: 0;
+    width: 50px;
+    opacity: 0;
+    animation: j_luigi 0.8s linear infinite;
+    animation-timing-function: cubic-bezier(0, 1, 0, 1);
+}
+.standing_luigi {
+    position: absolute;
+    width: 50px;
+    animation: s_luigi 0.8s linear infinite;
+    animation-timing-function: cubic-bezier(0, 1, 0, 1);
+}
+
+@keyframes j_luigi {
+    0% {opacity: 0}
+    50% {opacity: 1}
+    100% {opacity: 0}
+}
+@keyframes s_luigi {
+    0% {opacity: 1}
+    50% {opacity: 0}
+    100% {opacity: 1}
+}
+/* luigi anime end */
 
 
 
 
+.e_bm_wrap {
+    position: relative;
+    bottom: 75px;
+    left: 66vw;
+    animation: e_bm_move 5s linear 1;
+    animation-play-state: paused;
+}
 
+@keyframes e_bm_move {
+    from {left: -10vw;}
+    to {left: 66vw;}
+}
+
+.e_bm {
+    position: absolute;
+    width: 40px;
+    transform:scaleX(-1);
+}
+
+.e_bm_run1 {
+    animation: m_run1 0.2s linear infinite;
+    animation-timing-function: cubic-bezier(0, 1, 0, 1);
+}
+.e_bm_run2 {
+    opacity: 0;
+    animation: m_run2 0.2s linear infinite;
+    animation-timing-function: cubic-bezier(0, 1, 0, 1);
+}
+.e_bm_run3 {
+    opacity: 0;
+    animation: m_run3 0.2s linear infinite;
+    animation-timing-function: cubic-bezier(0, 1, 0, 1);
+}
+
+@keyframes m_run1 {
+    0% {opacity: 1;}
+    33.33% {opacity: 0;}
+    66.66% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@keyframes m_run2 {
+    0% {opacity: 0;}
+    33.33% {opacity: 1;}
+    66.66% {opacity: 0;}
+    100% {opacity: 0;}
+}
+@keyframes m_run3 {
+    0% {opacity: 0;}
+    33.33% {opacity: 0;}
+    66.66% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+.j_bm_wrap {
+    position:relative;
+    bottom: 76px;
+    left: 66vw;
+}
+
+.jumping_bm {
+    position: absolute;
+    bottom: -30px;
+    width: 38px;
+    opacity: 0;
+    animation: j_bm 0.8s infinite;
+    animation-timing-function: cubic-bezier(0, 1, 0, 1);
+    animation-play-state: paused;
+    display: none;
+}
+.standing_bm {
+    position: absolute;
+    width: 38px;
+    animation: s_bm 0.8s infinite;
+    animation-timing-function: cubic-bezier(0, 1, 0, 1);
+    animation-play-state: paused;
+    display: none;
+}
+
+@keyframes j_bm {
+    0% {opacity: 0}
+    50% {opacity: 1}
+    100% {opacity: 0}
+}
+@keyframes s_bm {
+    0% {opacity: 1}
+    50% {opacity: 0}
+    100% {opacity: 1}
+}
+
+/* section9 end */
 
