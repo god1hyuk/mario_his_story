@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mediaquery.css">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
     <script src="js/jquery.fullPage.js"></script>
 </head>
 <body>
@@ -23,16 +24,9 @@
                 <!-- section1 title -->
                 <div class="sec1_title_wrap d-w-100">
                     <div class="sec1_titlebox d-w-50">
-                        <div class="sec1_txt_wrap d-w-80">
-                            <div class="sec1_title1">
-                                <h1>MARIO</h1>
-                            </div>
-                            
-                            <div class="clearfix"></div>
-    
-                            <div class="sec1_title2">
-                                <h1>HIS STORY</h1>
-                            </div>
+                        <div class="sec1_title">
+                            <h1>MARIO</h1>
+                            <h1>HIS STORY</h1>
                         </div>
                     </div>
                 </div>
@@ -151,38 +145,33 @@
             <!-- section3 main container -->
             <div class="container">
 
-                <!-- sedtion3 title typing effect -->
-                <div class="title_wrap d-w-100">
-                    <div class="typing_txt">
-                        <ul>
-                            <li>1985</li>
-                            <li>SUPER MARIO BROS.</li>
-                        </ul>
-                    </div>
-
-                    <div class="typing">
-                        <ul>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- section3 tilte typing effect end -->
-
                 <!-- section3 mockup slide -->
-                <div class="m_slide d-w-100">
-                    <div class="prevBtn">
-                        <img src="images/prevBtn.png" alt="">
-                    </div>
                     <div class="mockup_NES d-w-30">
                         <img class="tv80s" src="images/mockup_NES.png" alt="">
-                        <img class="smb1_gif" src="images/smb1.gif" alt="">
-                        <!-- <img class="smb2_gif" src="images/smb2.gif" alt=""> -->
+                        <div class="bxslider">
+                            <div>
+                                <div class="sec3_title1 sec3_title d-w-100 ">
+                                    <p>1985</p>
+                                    <p>SUPER MARIO BROS.</p>
+                                </div>
+                                <img class="smb1_gif" src="images/smb1.gif" alt="">
+                            </div>
+                            <div>
+                                <div class="sec3_title2 sec3_title d-w-100">
+                                    <p>1986</p>
+                                    <p>SUPER MARIO BROS. 2 USA</p>
+                                </div>
+                                <img class="smb2_gif" src="images/smb2.gif"alt="">
+                            </div>
+                            <div>
+                                <div class="sec3_title3 sec3_title d-w-100">
+                                    <p>1988</p>
+                                    <p>SUPER MARIO BROS. 3</p>
+                                </div>
+                                <img class="smb3_gif" src="images/smb3.gif" alt="">
+                            </div>
+                          </div>
                     </div>
-                    <div class="nextBtn">
-                        <img src="images/nextBtn.png" alt="">
-                    </div>
-                </div>
                 <!-- section3 mockup slide end -->
                 
                 <div class="clearfix"></div>
@@ -289,10 +278,9 @@
             </div>
 
         </section>
-        
+        <script src="js/jquery.bxslider.min.js"></script>
+        <script src="js/jquery.fullPage.js"></script>
+        <script src="js/main.js"></script>
     </div>
-    
-    <script src="js/main.js"></script>
-
 </body>
 </html>

@@ -1,89 +1,78 @@
-/* section1 */
+/* iPad Pro horizontal */
+@media (max-width: 1366px) {
 
-@media (max-width:1024px) {
-    .sec1_title_wrap {
-        padding-top: 15vh;
-    }
-    .sec1_titlebox {
-        width: 70%;
-    }
-}
-
-@media (max-width:768px) {
-    .sec1_title1>h1 {
-        font-size: 6rem;
-    }
-    .sec1_title2>h1 {
-        font-size: 6rem;
-    }
-}
-
-@media (max-width:540px) {
-    .sec1_titlebox {
-        /* width: 80%; */
-        padding: 5% 0;
-    }
+    /* section1 */
     .sec1_title_wrap {
         padding-top: 12vh;
     }
     .sec1_titlebox {
-        border: 15px solid #fff;
+        width: 60vw;
     }
-    .sec1_title1>h1 {
-        font-size: 5rem;
-        letter-spacing: 1px;
-    }
-    .sec1_title2>h1 {
-        font-size: 5rem;
-        letter-spacing: 1px;
-    }
-    .sec1_scrolldown {
-        bottom: 16vh;
+    .sec1_title>h1 {
+        font-size: 13vw;
     }
     .sec1_scrolldown>p {
-        font-size: 3rem;
+        font-size: 6vw;
     }
-}
+    /* section1 end */
 
-@media (max-width:375px) {
-    .sec1_titlebox {
-        width: 80%;
-        padding: 8% 0;
+    /* section2 */
+    .sec2_txtbox_wrap {
+        margin-top: 15vh;
     }
-    .sec1_titlebox {
-        border: 10px solid #fff;
+    .sec2_txtbox_wrap>img {
+        width: 6%;
     }
+    .sec2_txtbox_inner {
+        width: 95%;
+    }
+    .ground_brick>img {
+        width: 150vw;
+    }
+    .goomba_run, .mario_run,
+    .sm_wrap, .bm_wrap {
+        animation-duration: 20s;
+    }
+    .goomba {
+        width: 60px;
+    }
+    .sm {
+        width: 60px;
+    }
+    .bm {
+        width: 50px;
+    }
+    /* section2 end */
+
+}
+/* iPad Pro horizontal end */
+
+/* iPad Pro vertical */
+@media (max-width:1024px) {
+
+    /* section1 */
     .sec1_title_wrap {
-        padding-top: 10vh;
+        padding-top: 15vh;
     }
-    .sec1_title1>h1 {
-        font-size: 4rem;
-        letter-spacing: 1px;
+    .sec1_titlebox {
+        width: 70vw;
     }
-    .sec1_title2>h1 {
-        font-size: 4rem;
-        letter-spacing: 1px;
-    }
-    .sec1_scrolldown {
-        bottom: 18vh;
+    .sec1_title>h1 {
+        font-size: 15vw;
     }
     .sec1_scrolldown>p {
-        font-size: 2.5rem;
+        font-size: 8vw;
     }
-}
+    /* section1 end */
 
-/* section1 end */
+    /* section2 */
 
-
-
-/* section2 */
-@media (max-width:1024px) {    
     .sec2_txtbox_wrap {
         width: 80%;
         height: 60vh;
-        margin-top: 17vh;
     }
     .sec2_txtbox_outter {
+        width: 95%;
         height: 95%;
     }
     .sec2_txtbox_inner {
@@ -97,127 +86,102 @@
         bottom: -3vh;
     }
     .ground_brick>img {
-        width: 200%;
+        width: 200vw;
     }
     .goomba {
-        width: 80px;
+        width: 70px;
     }
     .sm {
-        width: 80px;
+        width: 70px;
     }
     .bm {
-        width: 70px;
-    }    
-}
-
-@media (max-width:768px) {
-    .sec2_txtbox_wrap {
-        height: 55vh;
+        width: 60px;
     }
+    .goomba_run, .mario_run,
+    .sm_wrap, .bm_wrap {
+        animation-duration: 18s;
+    }
+    @keyframes g_move {
+        0% {transform: translateX(-900px);}
+        50% {transform: translateX(1500px);}
+        100% {transform: translateX(-900px);}
+    }
+
+    @keyframes m_move {
+        0% {transform: translateX(-700px);}
+        50% {transform: translateX(1700px);}
+        100% {transform: translateX(-700px);}
+    }
+
+    /* section2 end */
+    
+}
+/* iPad Pro vertical end */
+
+
+/* iPad horizontal */
+@media (max-height: 768px) {
+    /* section1 */
+    .sec1_title_wrap {
+        padding-top: 12vh;
+    }
+    .sec1_titlebox {
+        width: 60vw;
+    }
+    .sec1_title>h1 {
+        font-size: 12vw;
+    }
+    .sec1_scrolldown>p {
+        font-size: 5vw;
+    }
+    /* section1 end */
+
+    /* section2 */
     .clouds>img:nth-child(1) {
         display: none;
     }
     .clouds>img:nth-child(2) {
-        top: 15vh;
-        left: 3%;
-        width: 180px;
+        top: 12vh;
+        left: 5vw;
+        width: 150px;
     }
     .clouds>img:nth-child(3) {
         top: 6vh;
-        left: 30%;
+        left: 30vw;
         width: 110px;
     }
     .clouds>img:nth-child(4) {
-        top: 15vh;
-        right: 28%;
+        top: 10vh;
+        right: 30vw;
         width: 150px;
     }
     .clouds>img:nth-child(5) {
-        top: 8vh;
-        right: 5%;
+        top: 10vh;
+        right: 5vw;
         width: 120px;
     }
     .clouds>img:nth-child(6) {
         display: none;
     }
-}
-
-@media (max-width:540px) {
-    .sec2_txtbox_outter {
-        border: 3px solid #181818;
-    }
-    .sec2_txtbox_inner {
-        border: 6px solid #181818;
-    }
-    .clouds>img:nth-child(2) {
-        top: 15vh;
-        left: -5%;
-        width: 150px;
-    }
-    .clouds>img:nth-child(3) {
-        top: 6vh;
-        left: 26%;
-        width: 90px;
-    }
-    .clouds>img:nth-child(4) {
-        top: 13vh;
-        right: 25%;
-        width: 130px;
-    }
-    .clouds>img:nth-child(5) {
-        top: 8vh;
-        right: -3%;
-        width: 100px;
-    }
-    .sec2_txtbox>img {
-        top: 35vh;
-        width: 85%;
-    }
-    .goomba {
-        width: 60px;
-    }
-    .sm {
-        width: 60px;
-    }
-    .bm {
-        width: 50px;
-    }
-}
-
-@media (max-width:375px) {
     .sec2_txtbox_wrap {
-        width: 75%;
-        margin-top: 20vh;
-    }
-    .sec2_txtbox_inner{
-        width: 92%;
-        height: 94%;
+        margin-top: 15vh;
     }
     .sec2_txtbox_wrap>img {
-        width: 11%;
+        width: 6%;
     }
-    .clouds>img:nth-child(2) {
-        top: 15vh;
-        left: -8%;
-        width: 120px;
+    .sec2_txtbox_outter {
+        width: 96%;
+        height: 95%;
     }
-    .clouds>img:nth-child(3) {
-        top: 6vh;
-        left: 24%;
-        width: 70px;
-    }
-    .clouds>img:nth-child(4) {
-        top: 13vh;
-        right: 25%;
-        width: 100px;
-    }
-    .clouds>img:nth-child(5) {
-        top: 8vh;
-        right: -3%;
-        width: 80px;
+    .sec2_txtbox_inner {
+        width: 95%;
+        height: 90%;
     }
     .anime_container {
-        bottom: -1vh;
+        bottom: -5vh;
+    }
+    .ground_brick>img {
+        width: 130vw;
     }
     .goomba {
         width: 50px;
@@ -228,13 +192,421 @@
     .bm {
         width: 40px;
     }
+    .goomba_run, .mario_run,
+    .sm_wrap, .bm_wrap {
+        animation-duration: 17s;
+    }
+    
+    /* section2 end */
+
+
+}
+/* iPad horizontal end */
+
+/* iPad vertical */
+@media (max-width:768px) {
+    
+    /* section1 */
+    .sec1_titlebox {
+        width: 68vw;
+    }
+    .sec1_title {
+        width: 85%;
+    } 
+    .sec1_scrolldown>p {
+        font-size: 7vw;
+    }
+    /* section1 end */
+
+    /* section2 */
+    .clouds>img:nth-child(2) {
+        top: 15vh;
+        left: 3vw;
+        width: 180px;
+    }
+    .clouds>img:nth-child(3) {
+        top: 6vh;
+        left: 30vw;
+        width: 110px;
+    }
+    .clouds>img:nth-child(4) {
+        top: 15vh;
+        right: 28vw;
+        width: 150px;
+    }
+    .clouds>img:nth-child(5) {
+        top: 8vh;
+        right: 5vw;
+        width: 120px;
+    }
+    .sec2_txtbox_wrap {
+        height: 55vh;
+        margin-top: 20vh;
+    }
+    .sec2_txtbox_outter {
+        width: 95%;
+        height: 95%;
+    }
+    .sec2_txtbox_inner {
+        width: 93%;
+        height: 92%
+    }
+    .sec2_txtbox_wrap>img {
+        width: 8%;
+    }
+    .ground_brick>img {
+        width: 220vw;
+    }
+    .goomba {
+        width: 40px;
+    }
+    .sm {
+        width: 40px;
+    }
+    .bm {
+        width: 30px;
+    }
+    .goomba_run, .mario_run,
+    .sm_wrap, .bm_wrap {
+        animation-duration: 25s;
+    }
+    /* section2 end */
+
+}
+/* iPad vertical end */
+
+
+/* ================================== */
+
+/* Surface Duo horizontal */
+@media (max-width: 720px) {
+    /* section1 */
+    .sec1_title_wrap {
+        padding-top: 10vh;
+    }
+    .sec1_titlebox {
+        width: 60vw;
+        padding: 2vh 0;
+        border: 15px solid #fff;
+    }
+    .sec1_title>h1 {
+        font-size: 13vw;
+        letter-spacing: 1px;
+    }
+    .sec1_scrolldown {
+        bottom: 15vh;
+    }
+    .sec1_scrolldown>p {
+        font-size: 6vw;
+    }
+    /* section1 end */
+
+    /* section2 */
+    .clouds>img:nth-child(2) {
+        top: 15vh;
+        left: 3vw;
+        width: 120px;
+    }
+    .clouds>img:nth-child(3) {
+        top: 6vh;
+        left: 30vw;
+        width: 80px;
+    }
+    .clouds>img:nth-child(4) {
+        top: 15vh;
+        right: 28vw;
+        width: 120px;
+    }
+    .clouds>img:nth-child(5) {
+        top: 8vh;
+        right: 5vw;
+        width: 90px;
+    }
+    .sec2_txtbox_wrap {
+        height: 55vh;
+        margin-top: 18vh;
+    }
+    .sec2_txtbox_outter {
+        width: 95%;
+        height: 92%;
+    }
+    .sec2_txtbox_inner {
+        width: 95%;
+        height: 90%;
+        border: 8px solid #181818;
+    }
+    .sec2_txtbox_wrap>img {
+        width: 7%;
+    }
+    .ground_brick>img {
+        width: 150vw;
+    } 
+    .goomba_run, .mario_run,
+    .sm_wrap, .bm_wrap {
+        animation-duration: 18s;
+    }
+
+    @keyframes g_move {
+        0% {transform: translateX(-500px);}
+        50% {transform: translateX(1100px);}
+        100% {transform: translateX(-500px);}
+    }
+
+    @keyframes m_move {
+        0% {transform: translateX(-380px);}
+        50% {transform: translateX(1280px);}
+        100% {transform: translateX(-380px);}
+    }
+    /* section2 end */
+}
+/* Surface Duo horizontal end */
+
+/* Surface Duo vertical */
+@media (max-width: 540px) {
+    /* section1 */
+
+    .sec1_title_wrap {
+        padding-top: 10vh;
+    }
+    .sec1_titlebox {
+        width: 65vw;
+        border: 15px solid #fff;
+    }
+    .sec1_title>h1 {
+        font-size: 13vw;
+    }
+    .sec1_scrolldown {
+        bottom: 15.5vh;
+    }
+    .sec1_scrolldown>p {
+        font-size: 8vw;
+    }
+    /* section1 end */
+
+    /* section2 */
+    .sec2_txtbox_wrap>img {
+        width: 8%;
+    }
+    .sec2_txtbox_outter {
+        height: 92%;
+    }
+    .sec2_txtbox_inner {
+        width: 93%;
+        height: 92%;
+    }
+
+    .ground_brick>img {
+        width: 220vw;
+    }
+    .goomba {
+        width: 40px;
+    }
+    .sm {
+        width: 40px;
+    }
+    .bm {
+        width: 30px;
+    }
+    .goomba_run, .mario_run,
+    .sm_wrap, .bm_wrap {
+        animation-duration: 16s;
+    }
+
+    @keyframes g_move {
+        0% {transform: translateX(-500px);}
+        50% {transform: translateX(900px);}
+        100% {transform: translateX(-500px);}
+    }
+
+    @keyframes m_move {
+        0% {transform: translateX(-380px);}
+        50% {transform: translateX(1080px);}
+        100% {transform: translateX(-380px);}
+    }
+    /* section2 end */
 }
 
-/* section2 end */
+/* Surface Duo vertical end */
 
 
-/* section3 */
+/* ======================================= */
 
+/* iPhone X vertical */
 
+/* iPhone X horizontal */
+@media (device-width: 812px),(device-height: 375px) {
+    
+    /* section1 */
+    .sec1_title_wrap {
+        padding-top: vh;
+    }
+    .sec1_titlebox {
+        width: 40vw;
+        border: 10px solid #fff;
+    }
+    .sec1_title>h1 {
+        font-size: 7vw;
+    }
+    .sec1_scrolldown {
+        bottom: 13vh;
+    }
+    .sec1_scrolldown>p {
+        font-size: 4vw;
+    }
+    /* section1 end */
 
-/* section3 end */
+    /* section2 */
+    .clouds>img:nth-child(2) {
+        top: 12vh;
+        left: 3vw;
+        width: 80px;
+    }
+    .clouds>img:nth-child(3) {
+        top: 6vh;
+        left: 30vw;
+        width: 60px;
+    }
+    .clouds>img:nth-child(4) {
+        top: 10vh;
+        right: 30vw;
+        width: 80px;
+    }
+    .clouds>img:nth-child(5) {
+        top: 8vh;
+        right: 5vw;
+        width: 70px;
+    }
+    .sec2_txtbox_wrap {
+        margin-top: 15vh;
+    }
+    .sec2_txtbox_wrap>img {
+        width: 4%;
+    }
+    .sec2_txtbox_outter {
+        width: 97%;
+        height: 90%;
+    }
+    .sec2_txtbox_inner {
+        width: 97%;
+        height: 90%;
+        border: 6px solid #181818;
+    }
+
+    .ground_brick>img {
+        width: 100vw;
+    }
+    .goomba {
+        width: 25px;
+    }
+    .sm {
+        width: 25px;
+    }
+    .bm {
+        width: 20px;
+    }
+    .goomba_run, .mario_run,
+    .sm_wrap, .bm_wrap {
+        animation-duration: 20s;
+    }
+
+    @keyframes g_move {
+        0% {transform: translateX(-500px);}
+        50% {transform: translateX(1000px);}
+        100% {transform: translateX(-500px);}
+    }
+
+    @keyframes m_move {
+        0% {transform: translateX(-400px);}
+        50% {transform: translateX(1100px);}
+        100% {transform: translateX(-400px);}
+    }
+    /* section2 end */
+}
+/* iPhone X horizontal end */
+
+@media (max-width: 375px) {
+    .sec1_title_wrap {
+        padding-top: 15vh;
+    }
+    .sec1_titlebox {
+        width: 60vw;
+        padding: 3vh 0;
+        border: 13px solid #fff;
+    }
+    .sec1_title>h1 {
+        font-size: 13vw;
+    }
+    .sec1_scrolldown {
+        bottom: 15vh;
+    }
+    .sec1_scrolldown>p {
+        font-size: 9vw;
+    }
+    /* section2 */
+    .clouds>img:nth-child(1) {
+        display: none;
+    }
+    .clouds>img:nth-child(2) {
+        top: 12vh;
+        left: -2vw;
+        width: 80px;
+    }
+    .clouds>img:nth-child(3) {
+        top: 6vh;
+        left: 27vw;
+        width: 60px;
+    }
+    .clouds>img:nth-child(4) {
+        top: 10vh;
+        right: 25vw;
+        width: 80px;
+    }
+    .clouds>img:nth-child(5) {
+        top: 8vh;
+        right: -2vw;
+        width: 60px;
+    }
+    .clouds>img:nth-child(6) {
+        display: none;
+    }
+    .sec2_txtbox_wrap {
+        width: 76vw;
+    }
+    .sec2_txtbox_wrap>img {
+        width: 10%;
+    }
+    .sec2_txtbox_outter {
+        width: 92%;
+        height: 94%;
+    }
+    .sec2_txtbox_inner {
+        width: 90%;
+        height: 93%;
+    }
+    .goomba {
+        width: 30px;
+    }
+    .sm {
+        width: 30px;
+    }
+    .bm {
+        width: 25px;
+    }
+    .goomba_run, .mario_run,
+    .sm_wrap, .bm_wrap {
+        animation-duration: 15s;
+    }
+
+    @keyframes g_move {
+        0% {transform: translateX(-500px);}
+        50% {transform: translateX(600px);}
+        100% {transform: translateX(-500px);}
+    }
+
+    @keyframes m_move {
+        0% {transform: translateX(-400px);}
+        50% {transform: translateX(700px);}
+        100% {transform: translateX(-400px);}
+    }
+}
+/* iPhone X vertical end */
